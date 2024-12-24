@@ -1,0 +1,83 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fce6e6;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #ff4d4d; /* Red header background */
+    color: white;
+    padding: 10px 0; /* Reduced padding */
+    font-size: 1.5em; /* Smaller header font size */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em; /* Smaller font size */
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 1.1em; /* Adjusted font size */
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.container {
+    margin: 40px auto;
+    max-width: 700px;
+    position: relative;
+}
+
+/* Heart emoji */
+.heart-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 4em; /* Heart emoji size */
+}
+
+/* Love letter styles */
+.love-letter {
+    display: none;
+    background-color: #fff;
+    padding: 30px; /* Reduced padding */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 1em; /* Font size of the letter */
+    color: #333;
+    line-height: 1.6;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s ease;
+}
+
+/* Hover effect for heart to reveal love letter */
+.heart-container:hover + .love-letter {
+    display: block;
+}
+
+/* Second heart link container */
+.heart-container2 {
+    margin-top: 40px;
+}
+
+.heart-container2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.heart-container2 .heart {
+    font-size: 4em; /* Heart emoji size */
+    cursor: pointer;
+}
